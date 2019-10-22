@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BroadcastReceiverAlarm</string>
+    <string name="app_name">Alarm</string>
+    <string name="tbnAlarm">On/Off</string>
 </resources>

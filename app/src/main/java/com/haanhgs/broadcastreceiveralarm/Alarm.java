@@ -8,19 +8,21 @@ import android.content.Intent;
 import android.os.SystemClock;
 import android.widget.Toast;
 
-//create alarm manager that can auto open at reboot, this in turn will call broadcast class
-//to display notification.
-//add these lines to manifest, for this class can receive reboot alert
-//<receiver android:name=".Alarm"
-//            android:enabled="true"
-//            android:exported="false">
-//            <intent-filter>
-//                <action android:name="android.intent.action.BOOT_COMPLETED" />
-//            </intent-filter>
-//        </receiver>
+/*
+create alarm manager that can auto open at reboot, this in turn will call broadcast class
+to display notification. add these lines to manifest, for this class can receive reboot alert
 
-//and get permission for it
-//<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <receiver android:name=".Alarm"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+               <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+and get permission for it
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+*/
 
 public class Alarm extends BroadcastReceiver {
 
@@ -44,7 +46,7 @@ public class Alarm extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if ("aandroid.intent.action.BOOT_COMPLETED".equals(intent.getAction())){
+        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction())){
             createAlarm(context);
         }
     }

@@ -7,7 +7,7 @@ public class App extends Application {
 
     private static boolean visible;
 
-    public boolean isVisible() {
+    public static boolean isVisible() {
         return visible;
     }
 

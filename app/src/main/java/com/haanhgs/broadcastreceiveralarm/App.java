@@ -1,6 +1,9 @@
 package com.haanhgs.broadcastreceiveralarm;
 
-public class App {
+import android.app.Application;
+
+//return app visibility
+public class App extends Application {
 
     private static boolean visible;
 

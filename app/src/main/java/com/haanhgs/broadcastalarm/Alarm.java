@@ -43,8 +43,6 @@ public class Alarm extends BroadcastReceiver {
             manager.setInexactRepeating(
                     AlarmManager.ELAPSED_REALTIME_WAKEUP, trigger, interval, pendingIntent);
         }
-
-
     }
 
     @Override

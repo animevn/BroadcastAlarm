@@ -1,4 +1,4 @@
-package com.haanhgs.broadcastreceiveralarm;
+package com.haanhgs.broadcastalarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

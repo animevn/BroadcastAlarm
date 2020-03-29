@@ -1,4 +1,4 @@
-package com.haanhgs.broadcastreceiveralarm;
+package com.haanhgs.broadcastalarm;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

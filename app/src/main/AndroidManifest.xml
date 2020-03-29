@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.haanhgs.broadcastreceiveralarm">
+    package="com.haanhgs.broadcastalarm">
 
     <dist:module dist:instant="true" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
-        android:name=".App"
+        android:name="com.haanhgs.broadcastalarm.App"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/app_icon"
@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.haanhgs.broadcastalarm.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW"/>
@@ -24,12 +24,12 @@
         </activity>
 
         <receiver
-            android:name=".Broadcast"
+            android:name="com.haanhgs.broadcastalarm.Broadcast"
             android:enabled="true"
             android:exported="false">
         </receiver>
 
-        <receiver android:name=".Alarm"
+        <receiver android:name="com.haanhgs.broadcastalarm.Alarm"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
